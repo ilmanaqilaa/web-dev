@@ -1,5 +1,2 @@
-<?php 
-
-$this->load->model('home/index');
-$this->load->model('home/index');
-?>
+<label type="password">Password</label>
+<input type="password" name="password" id="password">
