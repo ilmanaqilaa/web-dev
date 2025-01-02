@@ -1,2 +1,2 @@
-<label type="password">Password</label>
-<input type="password" name="password" id="password">
+<label type="username">Username</label>
+<input type="text" name="username" id="username">
