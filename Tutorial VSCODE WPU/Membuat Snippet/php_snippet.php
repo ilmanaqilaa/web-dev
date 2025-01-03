@@ -1,2 +1,6 @@
-<label type="username">Username</label>
-<input type="text" name="username" id="username">
+<Form method="post" action="index.php">
+
+    <label type="username">Username</label>
+    <input type="text" name="username" id="username">
+
+</form>
