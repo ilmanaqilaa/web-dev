@@ -5,19 +5,59 @@
     <title>HTML | Form</title>
   </head>
   <body>
-    <label type="username">Username</label>
-    <input type="text" name="username" id="username" />
-    <br />
-    <label type="password">Password</label>
-    <input type="password" name="password" id="password" />
-    <br />
-    <input type="radio" name="jenisKelamin" id="pria"><label for="pria">Pria</label>
-    <input type="radio" name="jenisKelamin" id="wanita"><label for="wanita">Wanita</label>
-    <br>
-    <input type="checkbox" name="" id="menyanyi"><label for="menyanyi">menyanyi</label>
-    <input type="checkbox" name="" id="olahraga"><label for="olahraga">olahraga</label>
-    <input type="checkbox" name="" id="ngodong"><label for="ngodong">ngodong</label>
-    <br>
-    <button type="submit">Gas!</button>
+    <form method=" post" action="index.html">
+    <table cellspacing="0" cellpadding="5" style="text-align: center;" align="center">
+      <tr>
+        <td>
+          <label for="username">Username</label>
+        </td>
+        <td>
+          <input type="text" name="username" id="username" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <label for="password">Password</label>
+        </td>
+        <td>
+      <input type="password" name="password" id="password" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <input type="radio" name="jenisKelamin" id="pria" /><label for="pria">Pria</label>
+      <input type="radio" name="jenisKelamin" id="wanita" /><label for="wanita">Wanita</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <input type="checkbox" name="" id="menyanyi" /><label for="menyanyi">menyanyi</label>
+      <input type="checkbox" name="" id="olahraga" /><label for="olahraga">olahraga</label>
+      <input type="checkbox" name="" id="ngodong" /><label for="ngodong">ngodong</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+      <label for="textarea">Textarea</label>
+        </td>
+        <td>
+      <textarea name="" id=""></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+        <select name="namaDaerah" id="daerah">
+        <option value="">Sarijadi</option>
+        <option>Cimahi</option>
+        <option>Cibiru</option>
+      </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+      <button type="submit">Gas!</button>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
