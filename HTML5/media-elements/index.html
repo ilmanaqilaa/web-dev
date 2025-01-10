@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 | Image Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.125em;
+            line-height: 1.6;
+            color: #333;
+            padding: 2em;
+        }
+
+        .hero {
+            display: grid;  
+            grid-gap: 2em;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 960px) {
+            .hero {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hai NtisAhoy!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, rerum, aspernatur quaerat nulla et autem architecto obcaecati nam blanditiis minus velit quis tempora ea a ab est laboriosam mollitia possimus?
+            </p>
+        </div>
+        <picture>
+            
+            <img src="nature-small.jpg" alt="Hutan">
+        </picture>
+    </div>
+
+
+    <!-- <h1>Hai ini adalah gambar hutan</h1> -->
+
+    <!-- * Contoh Penerapan src,a lt, title, srcset, sizes, loading -->
+
+    <!-- <img src="nature-small.jpg" alt="Nature" title="Gambar Hutan" srcset="nature-small.jpg 500w, nature-medium.jpg 750w, nature-large.jpg 1000w" sizes="(min-width: 1200px) 50vw" loading="lazy"> -->
+
+    <!-- * Contoh implementasi figure -->
+<!-- 
+    <figure>
+        <img src="nature-medium.jpg" alt="">
+        <figcaption>Hutan belantara</figcaption>
+    </figure>
+     -->
+</body>
+</html>
