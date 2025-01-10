@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 | Audio & Video</title>
 </head>
+<!-- <style>
+    body, h1 {
+        padding: 0;
+        margin: 0;
+        font-family: arial;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* background-color: rgba(0, 0, 0, 0.3); */
+        background-image: linear-gradient(to right, rgba(169, 226, 10, 0.3), rgba(212, 199, 18, 0.3));
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 3em;
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .video-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+    }
+</style> -->
 <body>
     
+    <!-- ? Implementasi tag Audio -->
+
     <!-- <audio src="audio/jeja-onon.mp3" controls></audio> -->
 
     <!-- <figure>
@@ -18,6 +50,8 @@
             <source src="audio/jeja-onon.mp3" type="audio/mpeg">
         </audio>
     </figure>  -->
+
+    <!-- ? Implementasi Tag Video -->
 
     <!-- <video src="video/jeje-onon.mp4" width="500" controls></video> -->
 
@@ -32,6 +66,16 @@
         </video>
     </figure> -->
 
-    
+    <!-- <div class="hero">
+        <h1>Uhuyyy</h1>
+        <video class="video-bg" src="video/jeje-onon.mp4" autoplay muted loop></video>
+    </div> -->
+
+    <!-- ? Implementasi atribut Track pada tag Video -->
+     <video controls width="500">
+        <source src="video/jeje-onon.mp4" type="video/mp4">
+        <track src="captions/caption.vtt" kind="captions" title="Bahasa Indonesia" srclang="id">
+     </video>
+
 </body>
 </html>
