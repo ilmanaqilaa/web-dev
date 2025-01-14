@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 | SVG</title>
     <style>
-        .svg {
-            background-color: darkgray;
-            width: 300px;
-            height: 300px;
-        }
+      svg {
+        display: block;
+        margin: 20px;
+        background-color: lightgrey;
+      }
 
-        .kotak1 {
-            width: 100px;
-            height: 100px;
-            fill: orange;
-            x: 95px;
-            y: 100px;
-        }
+      .svg {
+        background-color: darkgray;
+        width: 300px;
+        height: 300px;
+      }
+
+      .kotak1 {
+        width: 100px;
+        height: 100px;
+        fill: orange;
+        x: 50px;
+        y: 50px;
+      }
     </style>
-</head>
-<body>
-    
-    <svg class="svg">
-        <rect class="kotak1"/>
+  </head>
+  <body>
+    <!-- ? Membuat rectangle dengan SVG -->
+    <svg class="svg" viewBox="50 50 300 300">
+      <rect class="kotak1" />
     </svg>
 
-</body>
+    <svg width="150" height="150">
+        <rect width="100" height="100" fill="navy" />
+        <circle r="50" cx="50" cy="50" fill="orange" />
+        <rect width="70" height="70" x="15" y="15" fill="darkorange"/>
+    </svg>
+
+  </body>
 </html>
