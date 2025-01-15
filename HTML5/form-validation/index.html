@@ -25,25 +25,32 @@
     </style>
   </head>
   <body>
-    <form method="post" action="index.html">
+    <form method="post" action="index.html" autocomplete="off">
       <div>
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          autofocus
+          required
+          minlength="2"
+        />
       </div>
 
       <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
       </div>
 
       <div>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
+        <input type="password" name="password" id="password" required />
       </div>
 
       <div>
         <label for="telephone">Telephone</label>
-        <input type="tel" name="telephone" id="telephone" />
+        <input type="tel" name="telephone" id="telephone" required />
       </div>
 
       <div>
@@ -58,37 +65,79 @@
 
       <div>
         <label for="date">Date</label>
-        <input type="week" name="date" id="date" />
+        <input type="week" name="date" id="date" required />
       </div>
 
       <div>
         <label for="date">Date</label>
-        <input type="month" name="date" id="date" />
+        <input type="month" name="date" id="date" required />
       </div>
 
       <div>
         <label for="date">Date</label>
-        <input type="time" name="date" id="date" />
+        <input type="time" name="date" id="date" required />
       </div>
 
       <div>
         <label for="number">Rate</label>
-        <input type="number" name="number" id="number" />
+        <input
+          type="number"
+          name="number"
+          id="number"
+          required
+          min="10"
+          max="100"
+          step="10"
+        />
       </div>
 
       <div>
         <label for="color">Warna</label>
-        <input type="color" name="color" id="color" />
+        <input type="color" name="color" id="color" required />
+        <span class="hexa"></span>
       </div>
 
       <div>
         <label for="nilai">Nilai</label>
-        <input type="range" name="nilai" id="nilai" />
+        <span class="awal">0</span>
+        <input type="range" name="nilai" id="nilai" min="0" max="100" />
+        <span class="akhir">100</span>
+      </div>
+
+      <div>
+        <label for="postalCode">Kode Pos</label>
+        <input
+          type="text"
+          name="postalCode"
+          id="postalCode"
+          pattern="^([1-9])[0-9]{4}$"
+        />
       </div>
 
       <div>
         <button>submit</button>
       </div>
+
+      <script>
+        const slider = document.querySelector("#nilai");
+        const awal = document.querySelector(".awal");
+        const akhir = document.querySelector(".akhir");
+
+        awal.innerHTML = slider.min;
+        akhir.innerHTML = slider.value;
+        slider.addEventListener("input", function () {
+          akhir.innerHTML = slider.value;
+        });
+
+        const color = document.querySelector("#color");
+        const hexa = document.querySelector(".hexa");
+
+        hexa.innerHTML = color.value;
+        color.addEventListener("input", function () {
+          hexa.innerHTML = color.value;
+          hexa.style.color = color.value;
+        });
+      </script>
     </form>
   </body>
 </html>
