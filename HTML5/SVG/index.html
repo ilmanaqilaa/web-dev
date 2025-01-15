@@ -28,6 +28,21 @@
         x: 50px;
         y: 50px;
       }
+
+      .star {
+        background-color: transparent;
+        animation: putar 5s linear infinite;
+      }
+
+      @keyframes putar {
+        0% {
+          transform: rotate(0deg);
+      }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     </style>
   </head>
   <body>
@@ -49,8 +64,25 @@
     </svg>
 
     <svg>
-      <path fill="none" stroke="orange" 
+      <path
+        fill="none"
+        stroke="orange"
         d="M 10,90 C 30,90 25,10 50,10 S 70,90 90,90"
+      />
+    </svg>
+
+    <svg class="star"
+      width="291"
+      height="311"
+      viewBox="0 0 291 311"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M145.5 9.00675L177.337 119.198L177.858 121.004H179.738H283.525L199.317 189.807L198.039 190.851L198.497 192.437L230.51 303.237L147.082 235.071L145.5 233.779L143.918 235.071L60.4901 303.237L92.5029 192.437L92.961 190.851L91.6829 189.807L7.47482 121.004H111.262H113.142L113.663 119.198L145.5 9.00675Z"
+        fill="#00FFE1"
+        stroke="black"
+        stroke-width="5"
       />
     </svg>
   </body>
