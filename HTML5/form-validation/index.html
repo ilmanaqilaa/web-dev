@@ -22,6 +22,20 @@
       label {
         display: block;
       }
+
+      input:invalid,
+      input:required:invalid {
+        border: none;
+        outline: 2px solid red;
+        border-radius: 2px;
+      }
+
+      input:valid,
+      input:required {
+        border: 1px solid black;
+        outline: inherit;
+        border-radius: inherit;
+      }
     </style>
   </head>
   <body>
@@ -35,6 +49,7 @@
           autofocus
           required
           minlength="2"
+          oninvalid="this.setCustomValidity('Ini harus diisi!')" oninput="this.setCustomValidity('')"
         />
       </div>
 
