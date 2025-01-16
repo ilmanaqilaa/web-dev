@@ -7,7 +7,9 @@
 </head>
 <body>
 
-    <h1>Uhuyyy NtisAhoy!</h1>    
+    <h1>Uhuyyy NtisAhoy!</h1> 
+    
+    <a href="" onclick="gantiNama()"> Ganti Nama</a>
 
     <script>
         const judul = document.querySelector('h1');
@@ -19,8 +21,15 @@
             localStorage.setItem('name', name);
         }
 
-
         judul.innerHTML = `Uhuyy ada ${name} nihh!`;
+
+        // Ganti Nama
+
+        const gantiNama = (e) => {
+            name = prompt('Masukan nama baru:');
+            localStorage.setItem('name', name);
+            e.preventDefault();
+        }
     </script>
 </body>
 
