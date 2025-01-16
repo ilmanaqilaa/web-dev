@@ -10,6 +10,8 @@
     <h1>Uhuyyy NtisAhoy!</h1> 
     
     <a href="" onclick="gantiNama()"> Ganti Nama</a>
+    <a href="" onclick="hapusNama()"> Hapus Nama</a>
+
 
     <script>
         const judul = document.querySelector('h1');
@@ -28,6 +30,13 @@
         const gantiNama = (e) => {
             name = prompt('Masukan nama baru:');
             localStorage.setItem('name', name);
+            e.preventDefault();
+        }
+
+        // Hapus Nama
+
+        const hapusNama = (e) => {
+            localStorage.removeItem('name');
             e.preventDefault();
         }
     </script>
