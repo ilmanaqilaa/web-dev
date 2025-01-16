@@ -22,6 +22,7 @@
     <a href="" onclick="gantiNama()"> Ganti Nama</a>
     <a href="" onclick="hapusNama()"> Hapus Nama</a>
     <a href="" class="toggle">Dark mode</a>
+    <a href="" onclick="hapusStorage()"> Hapus Storage</a>
 
     <script>
         const judul = document.querySelector('h1');
@@ -47,6 +48,12 @@
 
         const hapusNama = (e) => {
             localStorage.removeItem('name');
+            e.preventDefault();
+        }
+        // Hapus Nama
+
+        const hapusStorage = (e) => {
+            localStorage.clear();
             e.preventDefault();
         }
 
