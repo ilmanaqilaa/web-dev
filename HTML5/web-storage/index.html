@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 | Web Storage</title>
+    <style>
+        a {
+            color: inherit;
+        }
+        
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
@@ -11,7 +21,7 @@
     
     <a href="" onclick="gantiNama()"> Ganti Nama</a>
     <a href="" onclick="hapusNama()"> Hapus Nama</a>
-
+    <a href="" class="toggle">Dark mode</a>
 
     <script>
         const judul = document.querySelector('h1');
@@ -39,6 +49,43 @@
             localStorage.removeItem('name');
             e.preventDefault();
         }
+
+        // Dark mode feature
+        const toggle = document.querySelector('.toggle');
+        let theme = localStorage.getItem('theme');
+
+         if (!theme) {
+            localStorage.setItem('theme', 'light');
+         }
+
+        const darkMode = () => {
+            document.body.classList.add('dark-mode');
+            toggle.innerHTML = 'Light Mode';
+            localStorage.setItem('theme', 'dark');
+        }
+
+        if(theme === 'dark') {
+            darkMode();
+        }
+        
+        const lightMode = () => {
+            document.body.classList.remove('dark-mode');
+            toggle.innerHTML = 'Dark Mode';
+            localStorage.setItem('theme', 'light');
+        }
+        
+        toggle.addEventListener('click', function (e) {
+            theme = localStorage.getItem('theme');
+
+            if (theme === 'light') {
+                darkMode();
+            } else {
+                lightMode();
+            }
+
+            e.preventDefault();
+        });
+
     </script>
 </body>
 
