@@ -6,6 +6,22 @@
     <title>HTML5 | Web Storage</title>
 </head>
 <body>
-    
+
+    <h1>Uhuyyy NtisAhoy!</h1>    
+
+    <script>
+        const judul = document.querySelector('h1');
+        
+        let name = localStorage.getItem('name');
+        
+        if (!name) {
+            name = prompt('Sebutkan nama anda:');
+            localStorage.setItem('name', name);
+        }
+
+
+        judul.innerHTML = `Uhuyy ada ${name} nihh!`;
+    </script>
 </body>
+
 </html>
