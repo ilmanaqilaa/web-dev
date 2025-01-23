@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layouting | Display</title>
+  </head>
+
+  <!-- ? Elemen html yang bersifat inline terdiri dari: b, strong, i, em, a, span, supu, button, input, label, select, texarea. dll -->
+
+  <style>
+    /* Berikut merupakan ciri khas dari sifat elemen html yang bersifat display inline */
+    .nav1 a {
+      /* Ukuran dari inline akan mengikuti ukuran konten yang ada di dalamnya */
+      background-color: orange;
+      /* Ukuran dari elemen inline tidak bisa di atur terkecuali jika dirubah menjadi display (inline-block)*/
+      width: 50px;
+      height: 50px;
+    }
+
+    .inline-block {
+      /* Pada elemen yang memiliki class "inline-block" dan diberikan style display="inline-block" maka ukurannya dapat dirubah */
+      display: inline-block;
+    }
+
+    /* Berikut merupakan ciri khas dari sifat elemen html yang bersifat display block */
+    
+    main p {
+      text-align: justify;
+      text-indent: 30px;
+      /* Ukuran dari elemen yang bersifat display block akan menyesuaikan dengan lebar dari browser jika tidak diatur ukuran elemennya */
+      background-color: lightblue;
+    }
+
+    main {
+        /* Ukuran dari elemen yang bersifat display block dapat diatur sesuai dengan kebutuhan kita */
+        width: 500px;
+        background-color: lightgrey;
+    }
+
+    /* Dari kasus yang sudah diberikan kita merubah sifat display block pada "li" menjadi inline agar tampilan menjadi kesamping  */
+    .studcase li {
+        display: inline;
+        }
+  </style>
+
+  <body>
+    <header>
+      <h1>Welcome to my Uhuy!</h1>
+    </header>
+
+    <nav class="nav1">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a class="inline-block" href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+    </nav>
+
+    <!-- ? Terdapat kasus dimana ketika kita ingin merubah list yang bersifat block, contoh kasus dibawah merupakan kasus dimana ketika ingin merubah tampilan agar list tersebut menjadi samping seperti nav yang ada pada sebelumnya. -->
+    <nav class="studcase">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <h2>Kembalinya Ilman untuk ngodong!</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, porro
+        eaque necessitatibus fugit dolorum numquam eligendi aliquid animi facere
+        asperiores quisquam dicta, nobis aperiam repellat magni libero eius
+        veniam. Eligendi, nostrum! Aperiam, repellendus. Ipsam provident
+        perspiciatis hic atque velit eos officiis deserunt, sit suscipit ab
+        soluta am tempora explicabo sed ullam ea?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iste,
+        sunt molestiae accusamus voluptate labore sint ea itaque. Exercitationem
+        unde illum quam facilis quos cupiditate soluta at magnam dolore natus
+        asperiores, est, minus voluptates necessitatibus quia doloribus dicta
+        praesentium consectetur sed blanditiis eum dolorem modi aliquam! Commodi
+        cupiditate dignissimos debitis sit. Quidem provident minima adipisci.
+        Possimus minus consectetur, dolorum dolores, repellendus nisi voluptatem
+        animi perferendis amet odio pariatur doloremque molestias magnam
+        laudantium libero minima dolore harum fugiat, itaque aspernatur ducimus.
+        Modi reiciendis corporis, ut voluptatum animi blanditiis excepturi
+        ducimus quo dolorem eos earum quis, temporibus rerum, amet laboriosam?
+        Deserunt, aut.
+      </p>
+    </main>
+
+    <footer>
+      <p>Copyright: NtisAhoy 2025.</p>
+    </footer>
+  </body>
+</html>
