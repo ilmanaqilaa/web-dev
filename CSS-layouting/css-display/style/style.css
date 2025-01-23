@@ -1,0 +1,33 @@
+    /* Berikut merupakan ciri khas dari sifat elemen html yang bersifat display inline */
+    .nav1 a {
+      /* Ukuran dari inline akan mengikuti ukuran konten yang ada di dalamnya */
+      background-color: orange;
+      /* Ukuran dari elemen inline tidak bisa di atur terkecuali jika dirubah menjadi display (inline-block)*/
+      width: 50px;
+      height: 50px;
+    }
+
+    .inline-block {
+      /* Pada elemen yang memiliki class "inline-block" dan diberikan style display="inline-block" maka ukurannya dapat dirubah */
+      display: inline-block;
+    }
+
+    /* Berikut merupakan ciri khas dari sifat elemen html yang bersifat display block */
+
+    main p {
+      text-align: justify;
+      text-indent: 30px;
+      /* Ukuran dari elemen yang bersifat display block akan menyesuaikan dengan lebar dari browser jika tidak diatur ukuran elemennya */
+      background-color: lightblue;
+    }
+
+    main {
+      /* Ukuran dari elemen yang bersifat display block dapat diatur sesuai dengan kebutuhan kita */
+      width: 500px;
+      background-color: lightgrey;
+    }
+
+    /* Dari kasus yang sudah diberikan kita merubah sifat display block pada "li" menjadi inline agar tampilan menjadi kesamping  */
+    .studcase li {
+      display: inline;
+    }
