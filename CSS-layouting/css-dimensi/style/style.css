@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+p {
+  text-align: justify;
+}
+
+.case1,
+.case2 {
+  height: 200px;
+  width: 200px;
+}
+
+.case1 {
+  background-color: orange;
+}
+
+.case2 {
+  background-color: lightgray;
+  overflow: auto;
+}
