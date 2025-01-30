@@ -1,0 +1,46 @@
+.satu, .dua, .tiga {
+    width: 100px;
+    height: 100px;
+}
+
+.satu {
+background-color: orange;
+}
+
+/* ? Block lime tidak menghilang namun berada di bawah block navy. Itu dikarenakan block navy sudah kjeluar dari flow yang berada di dalam body */
+.dua {
+background-color: navy;
+float: left;
+/* ? Jika kita tambahkan property margin pada block navy maka block lime akan terlihat */
+margin-left: 10px;
+}
+
+.tiga {
+    background-color: lime;
+}
+
+.container {
+    margin: 10px auto;
+    width: 600px;
+    border: 2px solid;
+    padding: 10px;
+}
+
+div .empat, .lima, .enam {
+    width: 100px;
+    height: 100px;
+}
+
+.empat {
+    background-color: orange;
+}
+
+.lima {
+    background-color: navy;
+    /* ? Jika diberikan float right pada block navy yang ada pada container. Sama seperti yang kiri maka block nacy akan pindah ke sebelah kanan dan block hijau akan pindah naik ke atas karena block navy sudah dianggap keluar dari flow */
+    float: right;
+}
+
+.enam {
+    background-color: lime;
+}
