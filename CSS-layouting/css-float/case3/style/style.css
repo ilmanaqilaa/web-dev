@@ -1,0 +1,17 @@
+.container {
+    width: 600px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* ? Case disini adalah pembuatan untuk image galerry menggunakan float */
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
