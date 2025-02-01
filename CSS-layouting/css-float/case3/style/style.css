@@ -6,7 +6,7 @@
 }
 
 /* ? Case disini adalah pembuatan untuk image galerry menggunakan float */
-.container div {
+.box {
     width: 100px;
     height: 100px;
     background-color: orange;
@@ -14,4 +14,8 @@
     float: left;
     text-align: center;
     line-height: 100px;
+}
+
+.clear {
+    clear: left;
 }
