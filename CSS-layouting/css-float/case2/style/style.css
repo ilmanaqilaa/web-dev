@@ -22,6 +22,24 @@ p {
 
 /* ? Cara mengatasi overflowing pada float kita bisa menggunakan property yang bernama clear untuk membersihkan float tersebut */
 
-.clear {
-    clear: left;
+/* ! Namun dengan menggunakan div kosong itu tidak disarankan karena akan membuat code yang kita buat menjadi tidak rapih. Ada cara lain untuk mengatasi hal tersebut, yaitu dengan menggunakan "micro clearfix" di bawah ini */
+
+/* ? Cara menggunakannya yaitu dengan menambahkan class cf pada container */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
 }
