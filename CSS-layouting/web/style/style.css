@@ -42,6 +42,25 @@ table {
 	border-spacing: 0;
 }
 
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
+}
+
 /* Style */
 
 body {
@@ -52,7 +71,7 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 960;
     margin: auto;
     background-color: white;
 }
@@ -88,43 +107,74 @@ header .title {
 }
 
 .hero {
-    height: 450px;
+    height: 400px;
     background-image: url(../img/bike.jpg);
     background-size: cover; /* Change to cover for better scaling */
-    background-position: center; /* Center the image */
+    background-position: 0 -80px; /* Center the image */
     transition: transform 0.5s ease; /* Add transition for smooth zoom */
 }
 
 .hero:hover {
     transform: scale(1.2); /* Zoom effect on hover */
+    background-position: center;
+    height: 500px;
 }
 
-main section {
+.main {
+    width: 600px;
     padding: 20px;
+    float: left;
+    box-sizing: border-box;
 }
 
-main h2 {
+.main h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-main p {
+.main p {
     margin: 10px 0;
 }
 
-main .writed {
+.main .writed {
     margin-top: 2px;
     font-size: 15px;
     color: grey
 }
 
-main .writed a {
+.main .writed a {
     text-decoration: none;
     color: red;
 }
 
-main p {
+.main p {
     text-align: justify;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.sidebar img {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+.sidebar p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
