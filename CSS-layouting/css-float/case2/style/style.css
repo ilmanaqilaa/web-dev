@@ -19,3 +19,9 @@ h1 {
 p {
     text-align: justify;
 }
+
+/* ? Cara mengatasi overflowing pada float kita bisa menggunakan property yang bernama clear untuk membersihkan float tersebut */
+
+.clear {
+    clear: left;
+}
