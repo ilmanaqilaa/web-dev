@@ -1,0 +1,47 @@
+body {
+    display: flex;
+}
+
+.container {
+    margin: 20px;   
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    /* ? Pada kasus ini terlihat jika ketika kita ingin memindahkan box navy boc berwarna hijau ikut berpindah dan masih menempel dengan box navy */
+    margin-left: 20px;
+    margin-top: -50px;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: lime;
+}
+
+/* ? Untuk mengatasi hal tersebut kita dapat menggunkan property position */
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    /* ? Dengan position relative maka kita dapat memindahkan elemen tanpa mempengaruhi elemen lain, karena elemen pada box navy sudah keluar dari flow elemen yang lain */
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.box6 {
+    width: 200px;
+    height: 200px;
+    background-color: lime;
+}
