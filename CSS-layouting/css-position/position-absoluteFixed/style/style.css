@@ -1,0 +1,52 @@
+body {
+    display: flex;
+}
+
+.container {
+    margin: 20px;   
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    /* ? Pada kasus ini terlihat jika ketika kita ingin memindahkan box navy boc berwarna hijau ikut berpindah dan masih menempel dengan box navy */
+    margin-left: 20px;
+    margin-top: -50px;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: lime;
+}
+
+/* ? Untuk mengatasi hal tersebut kita dapat menggunkan property position */
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    /* ? Ketika kita menggunakan position absolute dan akan melakukan pemindahan posisi, maka kasus yang terjadi adalah box navy akan mengikuti parentnya walaupun box navy terbungkus oleh container*/
+    /* ! Mengapa hal tersebut bisa terjadi? itu karena border container berada di flow yang sama dengan box orange dan lime. */
+    /* ? Untuk mengatasi hal tersebut maka pada container harus diberikan position relative agar sejajar dengan flow navy */
+    position: absolute;
+    right: 0;
+}
+.box6 {
+    width: 200px;
+    height: 200px;
+    background-color: lime;
+}
