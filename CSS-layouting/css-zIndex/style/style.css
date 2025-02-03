@@ -1,0 +1,52 @@
+body {
+    display: flex;
+}
+
+.container {
+    margin: 20px;
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    position: relative;
+}
+
+/* ? Dengan memberikan position absolute maka semua box akan keluar dari flow dan menyebabkan semua box bertumpuk di bagian utama dari flownya */
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+/* ? Dengan melakukan cara di bawah untuk memindahkan posisi layer dari masing-masing box akan merepotkan karena kita harus memindahkan urutan dari masing-masing elemen yang ingin kita pindahkan */
+
+.box1 {
+    background-color: orange;
+}
+.box2 {
+    background-color: Navy;
+    top : 100px;
+    left: 100px;
+}
+.box3 {
+    background-color: grey;
+    top: 200px;
+    left: 200px;
+}
+
+/* ? Maka dari itu kita dapat menggunakan property z-index untuk memudahkan perpindahan layer dari elemen yang akan kita pindahkan */
+.box4 {
+    background-color: orange;
+}
+.box5 {
+    background-color: Navy;
+    top : 100px;
+    left: 100px;
+    /* ? Semakin besar value dari z-index maka elemen tersebut akan berada di layer paling depan dari elemen yang lain. Sehingga tidak perlu memindahkan posisi elemen secara manual */
+    z-index: 999;
+}
+.box6 {
+    background-color: grey;
+    top: 200px;
+    left: 200px;
+}
+
