@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/background.png);
+}
+
+.box1 {
+    width: 200px;    
+    height: 200px;
+    background-color: orange;
+    opacity: 1;
+    position: relative;
+}
+
+/* ? Di dalam css ini terdapat penerapan dari opacity terhadap elemen html yang dibuat, namun dikasus ini kita tidak bisa merubah child elemen menjadi solid karena akan mengikuuti parentnnya yang memiliki opacity  */
+
+.box2 {
+    width: 100px;    
+    height: 100px;
+    background-color: navy;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    opacity: .5;
+}
