@@ -70,10 +70,33 @@ body {
     background-image: url(../img/floor-tile.png);
 }
 
+.top-bar {
+    background-color: salmon;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 .container {
     width: 960;
-    margin: auto;
+    margin: 80px auto;
     background-color: white;
+    position: relative;
+}
+
+.ribbon {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/ribbon.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -22.5px;
+    right: -27.4px;
 }
 
 nav li {
