@@ -2,11 +2,15 @@ body {
     background-image: url(../img/background.png);
 }
 
+.container {
+    margin-bottom: 50px;
+}
+
 .box1 {
     width: 200px;    
     height: 200px;
     background-color: orange;
-    opacity: 1;
+    opacity: 0.5;
     position: relative;
 }
 
@@ -19,5 +23,21 @@ body {
     position: absolute;
     right: -50px;
     bottom: -50px;
-    opacity: .5;
+}
+
+.box3 {
+    width: 200px;    
+    height: 200px;
+    /* ? Solusi agar boc child tidak terpengaruh opacity dari parentnya maka solusinya adalah bisa menggunakan porperty yang bernaam RGBa atau HSLa */
+    background-color: RGBa(255, 165, 0, 0.4);
+    position: relative;
+}
+
+.box4 {
+    width: 100px;    
+    height: 100px;
+    background-color: navy;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
 }
