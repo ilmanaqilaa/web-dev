@@ -1,0 +1,27 @@
+.default {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(orange,navy);
+}
+
+.degree {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(45deg, orange,navy);
+}
+
+.arrow {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(to bottom right, orange,navy);
+}
+
+.colorStop{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(to bottom right, orange 50%,navy);
+}
