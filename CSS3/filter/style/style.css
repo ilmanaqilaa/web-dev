@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    margin: 20px;
+}
+
+.gambar1 {
+    filter: blur(1px);
+}
+
+.gambar2 {
+    filter: brightness(120%);
+}
+
+.gambar3 {
+    filter: contrast(150%);
+}
+
+.gambar4 {
+    filter: saturate(50%);
+}
+
+.gambar5 {
+    filter: grayscale(100%);
+}
+
+.gambar6 {
+    filter: sepia(100%);
+}
+
+.gambar7 {
+    filter: hue-rotate(-10deg);
+}
+
+.gambar8 {
+    filter: invert(100%);
+}
+
+.gambar9 {
+    filter: opacity(30%);
+}
+
+.gambar10 {
+    filter: drop-shadow(1pc 15px 5px grey);
+}
+
+h1 {
+    filter: drop-shadow(1pc 5px 2px grey);
+
+}
