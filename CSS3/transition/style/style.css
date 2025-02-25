@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid black;
+    display: flex;
+}
+.kotak{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    transition: 1.5s;
+}
+
+.container:hover .kotak {
+    transform: rotate(180deg);
+    margin-left: 500px;
+    background-color: navy;
+}
