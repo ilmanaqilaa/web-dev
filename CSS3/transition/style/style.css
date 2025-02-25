@@ -7,16 +7,39 @@ body {
     width: 600px;
     margin: 10px auto;
     border: 5px solid black;
-    display: flex;
 }
+
 .kotak{
     background-color: orange;
     width: 100px;
     height: 100px;
-    transition: 1.5s;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
 }
 
+.kotak1 { transition: 3s ease; }
+.kotak2 { transition: 3s ease-in; }
+.kotak3 { transition: 3s ease-out; }
+.kotak4 { transition: 3s ease-in-out; }
+.kotak5 { transition: 3s linear; }
+.kotak6 { transition: 3s cubic-bezier(0,-0.95,1,1.93); }
 .container:hover .kotak {
+    transform: rotate(180deg);
+    margin-left: 500px;
+    background-color: navy;
+}
+
+.delay-container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+.kotak-delay {
+    transition: 3s 1s;
+}
+.delay-container:hover .kotak-delay {
     transform: rotate(180deg);
     margin-left: 500px;
     background-color: navy;
