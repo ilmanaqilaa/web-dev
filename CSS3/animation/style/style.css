@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 10 auto;
+}
