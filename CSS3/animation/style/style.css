@@ -1,16 +1,40 @@
-body {
-    margin: 0;
-    padding: 0;
+/* Format animation
+
+@keyframes [name] {
+    from {
+        [property-css]
+    }
+
+    to {
+    [property-css]
+    }
 }
+
+/* animation:
+[name], [duration], [timing-function], [delay], [iteration-count], [direction], [fill-mode], [play-state]
+*/
+
+*/
 
 .kotak {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: orange;
-    margin: 10 auto;
-    transition: 2s ease all;
+    animation: boxAnimation 2s ease;
 }
 
-.kotak:hover {
-    width: 500px
+@keyframes boxAnimation {
+    0% {
+        width: 200px;
+    }
+
+    50% {
+        width: 500px;
+        height: 200px;
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+    }
 }
