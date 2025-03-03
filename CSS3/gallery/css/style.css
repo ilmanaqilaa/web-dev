@@ -30,12 +30,12 @@ h1 {
     /* overflow: hidden; */
     border: 5px solid grey;
     float: left;
-    margin-right: 20px;
+    margin: 10px;
     position: relative;
 }
 
 .gallery li,
-.gallery li img,
+.gallery li a img,
 .gallery li span {
     border-radius: 50%;
 }
@@ -63,4 +63,48 @@ h1 {
 
 .clear {
     clear: both;
+}
+
+/* Overlay */
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .7);
+}
+
+.overlay:target img {
+    animation: zoomFade 1s;
+}
+
+/* image animation */
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
