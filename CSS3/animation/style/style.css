@@ -18,7 +18,7 @@
     width: 200px;
     height: 200px;
     background-color: orange;
-    animation: boxAnimation 2s ease infinite alternate forwardsv;
+    animation: boxAnimation 2s ease infinite alternate forwards;
 }
 
 @keyframes boxAnimation {
