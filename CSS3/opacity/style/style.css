@@ -28,7 +28,7 @@ body {
 .box3 {
     width: 200px;    
     height: 200px;
-    /* ? Solusi agar boc child tidak terpengaruh opacity dari parentnya maka solusinya adalah bisa menggunakan porperty yang bernaam RGBa atau HSLa */
+    /* ? Solusi agar box child tidak terpengaruh opacity dari parentnya maka solusinya adalah bisa menggunakan porperty yang bernaam RGBa atau HSLa */
     background-color: RGBa(255, 165, 0, 0.4);
     position: relative;
 }
